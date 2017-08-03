@@ -1,4 +1,4 @@
-var wordsList = [];
+var wordsList = []; //empty word list
 
 function init() {
   // Load the words from the dictionary text file to wordsList
