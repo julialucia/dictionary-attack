@@ -15,5 +15,5 @@ window.onload = init;
 /* ADD YOUR CODE BELOW */
 
 function checkPassword() {
-
+  document.getElementById("demo").innerHTML = "it works!";
 }
