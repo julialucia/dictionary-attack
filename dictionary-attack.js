@@ -19,7 +19,6 @@ function checkPassword() {
   for (var i=0; i < wordsList.length; i++) {
     if (pass == wordsList[i]) {
       document.getElementById("results").innerHTML = "Weak password, try again";
-    location.reload(true);
       
   }
 }
