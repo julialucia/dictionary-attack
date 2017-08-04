@@ -21,7 +21,7 @@ function checkPassword() {
       document.getElementById("results").innerHTML = "Weak password, try again";
       setTimeout(function(){
    window.location.reload(1);
-}, 5000);
+}, 8000);
       
   }
 }
