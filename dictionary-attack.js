@@ -16,13 +16,24 @@ window.onload = init;
 
 function checkPassword() {
   var pass = document.getElementById("pw").value;
+  var strength;
   for (var i=0; i < wordsList.length; i++) {
-    if (pass == wordsList[i]) {
+    if (pass == wordsList[i]){
+      strenth = false;
+      printResults(strength);
+    }
+  }
+  strength = true
+  printResults(strength);
+}
+function printResults(strength) {
+   if strength == true){
       document.getElementById("results").innerHTML = "Weak password, try again";
       break;
-      setTimeout(function(){
-   window.location.reload(1);
-}, 8000);
+   } else { 
+     document.getElementById("results").innerHTML = "Good password!"
+     location.reload();
+     checkPassword();
       
   }
 }
