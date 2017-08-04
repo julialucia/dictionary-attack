@@ -15,5 +15,9 @@ window.onload = init;
 /* ADD YOUR CODE BELOW */
 
 function checkPassword() {
-
+document.getElementById("pw").value = imput;
+for (i=0; i < wordsList.length; i++) {
+  if (imput = wordsList[i]) {
+    document.getElementById("results").innerHTML = "Weak password, try again";
+    
 }
