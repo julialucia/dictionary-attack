@@ -15,10 +15,11 @@ window.onload = init;
 /* ADD YOUR CODE BELOW */
 
 function checkPassword() {
-document.getElementById("pw").value = var imput;
-for (i=0; i < wordsList.length; i++) {
-  if (imput = wordsList[i]) {
+var input = document.getElementById("pw").value;
+for (var i=0; i < wordsList.length; i++) {
+  if (input == wordsList[i]) {
     document.getElementById("results").innerHTML = "Weak password, try again";
+    break;
   }
 }
     
