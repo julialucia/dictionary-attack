@@ -20,9 +20,9 @@ function checkPassword() {
     if (pass == wordsList[i]) {
       document.getElementById("results").innerHTML = "Weak password, try again";
       break;
-      //setTimeout(function(){
-   //window.location.reload(1);
-//}, 8000);
+      setTimeout(function(){
+   window.location.reload(1);
+}, 8000);
       
   }
 }
